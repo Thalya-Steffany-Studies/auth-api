@@ -7,13 +7,15 @@ import connectDB from './config/db.js'
 dotenv.config()
 
 
+
+const app = express();
+
+
+// Middlewares
 app.use(cors({
   origin: "*",
 }));
 
-const app = express();
-
-// Middlewares
 app.use(express.json());
 
 // Rotas
